@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(170,92,104);
+    background: linear-gradient(90deg, rgb(172, 108, 117) 12%, rgb(185, 91, 114) 66%, rgb(106, 77, 175) 100%); 
+    /* background-image: url(https://media.internacional.groundsportech.com/wp-content/uploads/2023/10/08210729/RFD21830-1152x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  */ 
+
+}
+
+a{
+    color: rgba(226, 29, 29, 0.685);
+    text-decoration: none;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.main-header h1{
+    font-size: 4em;
+    line-height: 1.2em;
+
+}
+
+.main-header h1 span{
+    color: rgb(201, 30, 30);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2em;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2em;
+    background-color: rgba(240, 13, 13, 0);
+    margin-bottom: 2em
+}
+
+img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.card{
+    padding: 2em;
+}
+
+.card h3{
+    margin-bottom: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+.btn{
+    display: inline-block;
+    background: #000;
+    color: rgb(255, 17, 0);
+    padding: 0.8em 1.8em;
+    cursor: zoom-in;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: darkred;
+    opacity: 0.4;
+    /* box-shadow: 4px 2px 4px rgba(184, 27, 27, 0.575); */
+}
+
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.5em;
+
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 2.5s cubic-bezier(.17,.67,.83,.67);
+}
+
+.galeria div:hover{
+    flex: 4;
+}
+
+.galeria:hover div:not(:hover){
+    filter: sepia(60%);
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-size:x-large;
+    font-family: fantasy;
+}
+
+h3{
+    font-weight: bolder;
+    font-style: inherit;
+    font-family: 'Tilt Neon', sans-serif;
+    color: darkred;
+}
